@@ -213,8 +213,7 @@ function showProperties(obj) {
 
     function checkValidBitWidth() {
         const selector = $("[name='newBitWidth']");
-        if (selector == undefined
-            || selector.val() > 32
+        if ( selector.val() > 32
             || selector.val() < 1
             || !$.isNumeric(selector.val())) {
             // fallback to previously saves state
